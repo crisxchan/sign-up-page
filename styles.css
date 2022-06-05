@@ -142,6 +142,9 @@ a {
         text-align: center;
     }
 
+    input {
+        width: 40vw;
+    }
     .input {
         align-items: center;
         margin: 0 0 15px 0;
