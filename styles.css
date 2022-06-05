@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#bg-img {
+    background-image: url('assets/bg-img.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+}
+
+#logo {
+    position: relative;
+    top: 10vh;
+    font-size: 1.5rem;
+    color: #F3F3F3;
+    text-align: center;
+    background-color: #33333330;
+    padding: 5px;
+}
+
+#credits-img {
+    width: 40vw;
+    color: #F3F3F3;
+    text-align: center;
+    position: relative;
+    top: 85vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    max-height: 100%;
+    background-color: #F5F5F5;
+}
+
+#main-text, #main-footer {
+    margin: 40px 70px;
+}
+
+button {
+    margin: 0 0 20px 0;
+    padding: 10px 40px;
+    background-color: #477DAB;
+    border-radius: 5px;
+    border: 2px solid;
+    color: #F3F3F3;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+button:hover {
+    border: 2px solid #6caee7;
+}
+
+#main-form {
+    background-color: #FAFAFA;
+    box-shadow: 0 2px 4px 0 #33333330, 0 2px 16px 0 #33333330;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px 70px;
+}
+
+#main-form h3 {
+    width: 100%;
+    margin: 0 0 20px 0; 
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 25px 15px 0;
+}
+
+input {
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #AAAAAA;
+    padding: 0 10px;
+}
+
+input:focus{
+    border: 1px solid #477DAB;
+}
+
+.input label {
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+#login {
+    color: #477DAB;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 700px){
+    body {
+        flex-direction: column;
+    }
+
+    #bg-img {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    #main-text, #main-footer {
+        text-align: center;
+    }
+
+    #logo {
+        position: static;
+    }
+
+    #main-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #main-form h3 {
+        text-align: center;
+    }
+
+    .input {
+        align-items: center;
+        margin: 0 0 15px 0;
+    }
+
+    #credits-img {
+        display: none;
+    }
+}
