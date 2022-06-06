@@ -11,12 +11,13 @@
     <title>Sign-up Form</title>
 </head>
 <body>
+    <script src="script.js" defer></script>
     <div id="bg-img">
         <div id="logo">
             <h1>JES</h1>
         </div>
         <div id="credits-img">
-            <p>Photo by <u>Jonny Gios</u> on <u>Unsplash</u></p>
+            <p>Photo by <a href="https://unsplash.com/@supergios" target="_blank"><u>Jonny Gios</u></a> on <a href="https://unsplash.com/photos/3eg6EKTPd7Q" target="_blank"><u>Unsplash</u></a></p>
         </div>
     </div>
     <main>
@@ -30,44 +31,47 @@
                 You <i>know</i> you want to.
             </h4>
         </div>
-        <form id="main-form">
-            <h3>Let's do this!</h3>
 
-            <div class="input">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="first-name">
+        <form>
+            <div id="main-form">
+                <h3>Let's do this!</h3>
+    
+                <div class="input">
+                    <label for="first-name">*FIRST NAME</label>
+                    <input type="text" id="first-name" required>
+                </div>
+    
+                <div class="input">
+                    <label for="last-name">*LAST NAME</label>
+                    <input type="text" id="last-name" required>
+                </div>
+    
+                <div class="input">
+                    <label for="email">*EMAIL</label>
+                    <input type="email" id="email" required>
+                </div>
+    
+                <div class="input">
+                    <label for="phone-number">PHONE NUMBER <i>(optional)</i></label>
+                    <input type="tel" id="phone-number" placeholder="09xxxxxxxxx" pattern="09[0-9]{9}" title="Please enter a valid PH mobile number. Ex: 0945123321">
+                </div>
+            
+                <div class="input">
+                    <label for="password">*PASSWORD</label>
+                    <input type="password" id="password" required>
+                </div>
+    
+                <div class="input">
+                    <label for="confirm-password">*CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
             </div>
 
-            <div class="input">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name">
-            </div>
-
-            <div class="input">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email">
-            </div>
-
-            <div class="input">
-                <label for="phone-number">PHONE NUMBER</label>
-                <input type="tel" name="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-            </div>
-        
-            <div class="input">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password">
-            </div>
-
-            <div class="input">
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password">
+            <div id="main-footer">
+                <input type="submit" id="btn-submit" value="Create Account">
+                <h4>Already have an account? <a href=""id="login">Log in</a></h4>
             </div>
         </form>
-
-        <div id="main-footer">
-            <button>Create Account</button>
-            <h4>Already have an account? <a href=""id="login">Log in</a></h4>
-        </div>
     </main>
 </body>
 </html>
