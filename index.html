@@ -32,43 +32,43 @@
             </h4>
         </div>
 
-        <form>
+        <form method="">
             <div id="main-form">
                 <h3>Let's do this!</h3>
     
                 <div class="input">
                     <label for="first-name">*FIRST NAME</label>
-                    <input type="text" id="first-name" required>
+                    <input class="input-field" type="text" id="first-name" data-type="first-name" required>
                 </div>
     
                 <div class="input">
                     <label for="last-name">*LAST NAME</label>
-                    <input type="text" id="last-name" required>
+                    <input class="input-field" type="text" id="last-name" data-type="last-name" required>
                 </div>
     
                 <div class="input">
                     <label for="email">*EMAIL</label>
-                    <input type="email" id="email" required>
+                    <input class="input-field" type="email" id="email" data-type="email" required>
                 </div>
     
                 <div class="input">
                     <label for="phone-number">PHONE NUMBER <i>(optional)</i></label>
-                    <input type="tel" id="phone-number" placeholder="09xxxxxxxxx" pattern="09[0-9]{9}" title="Please enter a valid PH mobile number. Ex: 0945123321">
+                    <input class="input-field" type="tel" id="phone-number" data-type="contact" placeholder="09xxxxxxxxx" title="Please enter a valid PH mobile number. Ex: 0945123321">
                 </div>
             
                 <div class="input">
                     <label for="password">*PASSWORD</label>
-                    <input type="password" id="password" required>
+                    <input class="input-field" type="password" id="password" data-type="password" required>
                 </div>
     
                 <div class="input">
                     <label for="confirm-password">*CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" required>
+                    <input class="input-field" type="password" id="confirm-password" data-type="confirm-password" required>
                 </div>
             </div>
 
             <div id="main-footer">
-                <input type="submit" id="btn-submit" value="Create Account">
+                <input type="submit" id="btn-submit" value="Create Account" disabled>
                 <h4>Already have an account? <a href=""id="login">Log in</a></h4>
             </div>
         </form>

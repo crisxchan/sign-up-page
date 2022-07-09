@@ -55,12 +55,21 @@ main {
     height: 40px;
     margin: 0 0 20px 0;
     padding: 10px 40px;
-    background-color: #477DAB;
+    background-color: rgb(71, 125, 171);
     border-radius: 5px;
     border: 2px solid;
     color: #F3F3F3;
     font-family: sans-serif;
     font-size: 1rem;
+}
+
+#btn-submit:disabled {
+    background-color: rgba(71, 125, 171, 0.5);
+}
+
+#btn-submit:disabled:hover {
+    background-color: rgba(71, 125, 171, 0.5);
+    border: 2px solid;
 }
 
 #btn-submit:hover {
@@ -92,6 +101,14 @@ input {
     border-radius: 5px;
     border: 1px solid #AAAAAA;
     padding: 0 10px;
+}
+
+input.valid {
+    border: 1px solid rgb(0, 179, 0);
+}
+
+input.invalid {
+    border: 1px solid crimson
 }
 
 input:focus{
